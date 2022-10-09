@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prijava za utrku</title>
+  </head>
+  <body>
+    <form action="">
+      <label for="ime">Ime: </label> <br />
+      <input type="text" name="ime" id="ime" required placeholder="Ivan" />
+      <br />
+      <label for="prezime">Prezime:</label> <br />
+      <input
+        type="text"
+        name="prezime"
+        id="prezime"
+        requiered
+        placeholder="Ivić"
+      />
+      <br />
+      <label for="mail">Email adresa:</label> <br />
+      <input
+        type="email"
+        name="mail"
+        id="mail"
+        placeholder="ivanivic@gmail.com"
+      />
+      <br />
+      <label for="datumrodenja">Datum rođenja</label> <br />
+
+      <input type="date" id="datumrodenja" name="datumrodenja" max="2004-09-10"/>
+
+      <hr />
+
+      <label for="imeekipe">Ime ekipe:</label> <br />
+      <input type="text" name="imeekipe" id="imeekipe" name="imeekipe" /> <br />
+      <label for="broj">Broj trkača u ekipi (min 3, max 6):</label> <br />
+      <input type="number" name="broj" id="broj" min="3" max="6"/> <br />
+      <label for="">Željena boja majice:</label> <br />
+      <input type="color" name="boja" id="boja" /> <br />
+      <hr />
+      <p>
+        Odaberite utrku u kojoj želite sudjelovati (možete sudjelovati u samo
+        jednoj utrci):
+      </p>
+      <br />
+      <label for="red40km">Red 40 km</label>
+      <input type="radio" id="red40km" name="utrka" value="red40km" /> <br />
+      <label for="cliffblue24km">Cliff Blue 24 km</label>
+      <input
+        type="radio"
+        id="cliffblue24km"
+        name="utrka"
+        value="cliffblue24km"
+      />
+      <br />
+      <label for="baygreen9.3km">Bay Green 9.3 km</label>
+      <input
+        type="radio"
+        id="baygreen9.3km"
+        name="utrka"
+        value="baygreen9.3km"
+      />
+      <br />
+      <hr />
+      <p>Potvrdu o uplati možete priložiti ovdje:</p> <br>
+      <label for="file">Odaberite datoteku:</label> <br>
+      <input type="file" id="file" name="file">
+<hr>
+
+<input type="submit">
+    </form>
+  </body>
+</html>
