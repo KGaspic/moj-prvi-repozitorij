@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Predavanje 4</title>
+  </head>
+  <body>
+<!--Multimedija - grafika-->
+<img width="300"  src="https://thumbs.dreamstime.com/b/happy-student-thumbs-up-classroom-looking-you-classmates-background-96531919.jpg" alt="sretni studenti">
+<br>
+<img src="./happystudent.jpg" alt="sretanstudent">
+
+
+
+
+
+
+    <!--Forme- nstavak-->
+    <form action="#" method="get" oninput="bonus.value=(parseInt(parseInt(placa.value)*0.2) + kn)">
+      <label for="post">Unesite sadržaj svog posta</label> <br />
+<!--PREPIŠI KOD JER NE ZNAM SAMA NAPISATI-->
+      <textarea name="post" id="post" cols="100" rows="10">
+Upisite svoj post</textarea
+      >
+    <!--Botun-->
+    <button type="button" onclick="alert ('Hello world')">Click me!</button>
+
+    <form action="/action_page.php">
+        <br>
+
+        <label for="polaznici">Odaberite polaznika iz liste</label>
+        <input list="polaznici" name="polaznik">
+        <datalist id="polaznici">
+          <option value="Gaspic">
+          <option value="Bunjan">
+          <option value="Rodic">
+          <option value="Cvitanic">
+          <option value="Blazic">
+        </datalist>
+        <input type="submit">
+<br>
+<br>
+<br>
+<label for="placa">Odaberite iznos godišnje plaće:</label>
+<input type="range" id="placa" min="100000" max="1000000" name="placa" value="500000"> <br>
+<label for="bonus">Predviđeni bonus za potpisivanje ugovora</label>
+<output name="bonus" for="placa">100000</output>
+    </form>
+  </body>
+</html>
