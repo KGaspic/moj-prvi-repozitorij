@@ -3,6 +3,7 @@
     padding: 0px;
     box-sizing: border-box;
     background-color: #e9edc9;
+    
 }
 
 
@@ -69,5 +70,15 @@ a img{
     background-color: #283618;
     color: bisque;
     border-radius: 15px;
-    
+
+}
+
+textarea, input{
+    border-radius: 15px;
+}
+
+
+p::first-letter{
+    font-weight: bold;
+    color: #283618;
 }
