@@ -12,10 +12,15 @@ h1{
 
 h2{
     color: #606c38;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
   
 }
 h3{
     color: #606c38;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 img{
@@ -23,7 +28,7 @@ img{
     border-radius: 5px;
 }
 
-nav {
+#druganavigacija {
     border: 2px solid black;
     border-radius: 5;
     padding: 20px;
@@ -36,4 +41,33 @@ ul{
 
 section:first-of-type{
     background-color: #606c38;
+}
+
+
+a img{
+    width: 50px;
+    float: left;
+}
+
+
+#mainnav{
+    float: left;
+    padding-left: 10px;
+    padding-top: 20px;
+    
+   
+}
+
+.navbar {
+    display: inline-block;
+    padding-right: 10px;
+    font-size: 20px;
+    
+}
+
+.komentar{
+    background-color: #283618;
+    color: bisque;
+    border-radius: 15px;
+    
 }
