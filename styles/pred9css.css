@@ -1,0 +1,106 @@
+/* unvisited link */
+a:link {
+    color: #FF0000;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: #00FF00;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: #FF00FF;
+  }
+  
+  /* selected link */
+  a:active {
+    color: #0000FF;
+  }
+
+  header:hover{
+    background-color: lightblue;
+  }
+
+  table{
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  td{
+    padding: 10px;
+    border: 1px solid black;
+  }
+  tr:nth-child(2n+1){
+    background-color: #FF00FF;
+  }
+
+  tr:nth-child(2n){
+    background-color: #FF0000;
+  }
+/*sve slike koje su last child svog roditelja*/
+ img:last-child{
+    width: 100%;
+ }
+/*sve slike koje nisu zadnje dijete svog roditelja*/
+ img:not(img:last-child){
+width: 50%;
+ }
+ 
+ /*paragraf koji je prvi tog tipa u svom roditelju 
+ a da nije drugo dijete tog roditelja*/
+
+ p:first-of-type:not(p:nth-child(2))
+ {
+    background-color: aquamarine;
+ }
+/*sto ce biti uhvaceno, ja mislim samo kad je h1 prvo dijete, sad smo promijenili pa prvi h1 koji se pojavljuje*/
+ h1:nth-of-type(1){
+background-color: brown;
+ }
+/*pseudo elementi*/
+ .biti-ce-u-provjeri::after{
+    content: "biti će u provjeri";
+    background-color: aquamarine;
+    margin-left: 5px;
+    display: inline-block;
+    position: relative;
+    top: -10px;
+    height: 10px;
+    line-height: 10px;
+    font-size: 8px;
+ }
+
+ ::marker{
+    content:"-";
+    font-size: 30px;
+ }
+/*dohvati mi sve dtove kojima je predak main, lakše je čitat odozada prema napriejd*/
+ main dt{
+    background-color: #00FF00;
+ }
+/*svi dtov kojims jr otac main*/
+ main > dt{
+    color: purple;
+ }
+
+ dl > dt{
+    color: magenta;
+ }
+
+ /*dohvati mi div koji slijedi odmah nakon diva*/
+
+ div + div{
+    rotate: 30deg;
+ }
+
+ /*transform:rotate* mogla je i ta stilizacija/
+
+ /*pogledaj hoverable dropdown*/
+ /*dropdown content*/
+
+ /*example css responsive collapse menu*/
+
+ div ~ h1{
+    font-size: 70px;
+ }

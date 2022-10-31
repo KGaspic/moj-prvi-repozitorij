@@ -1,0 +1,33 @@
+/*selektor svega*/
+*{
+    text-transform: lowercase;
+}
+
+/*selektor taga*/
+h2 {
+    transform: rotate(-4deg);
+}
+/*class selector*/
+.zabava{
+    text-transform: uppercase;
+}
+/*id selector*/
+#setanje{
+    text-align: right;
+}
+
+/*zašto je samo video upperrcase?
+ zadnji se dogodio i zato je uppercase
+ da je obrnuto video bi i dalje ostao uppercase, nemaju 
+ svi selektori jednak prioritet primjene
+ class je veci prioritet od sve selektora
+ /* i zato je video ostao u upperkejsu */ */
+
+ .prva {
+    color: green;
+ }
+ .druga {
+    color: yellow;
+ }
+ /*žuta će prevladat jer je zadnja spomenuta*/
+ 

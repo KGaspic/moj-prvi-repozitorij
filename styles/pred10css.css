@@ -1,0 +1,56 @@
+/*uvijek biramo border box*/
+*{
+    box-sizing: border-box;
+}
+
+p {
+    color: red !important;
+}
+
+/*ne treba koristiti cesto important*/
+
+
+/*prioriteti taga ID IMA PREDNOST
+html element pa .class pa #id*/
+
+
+#link1{
+    background-color: brown;
+    
+}
+
+a:first-of-type{
+    color: green;
+    background-color: red;
+}
+
+[href]{
+    color: beige;
+}
+
+.link1{
+    background-color: blue;
+    color: burlywood;
+}
+
+
+a{
+    background-color: aqua;
+    color: blueviolet;
+}
+
+body > anchor{
+    background-color: hotpink;
+}
+
+/*mjerne jedinice
+px
+% sirina roditelja
+ww wh viewport
+em mjerna jedinica- relativna mjerna jedinica
+px u css nije isti ko px na zaslonu 1/96 inch je 1 px u css*/
+
+div{
+    background-color: cornflowerblue;
+    padding: 10px;
+}

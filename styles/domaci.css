@@ -1,0 +1,39 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: #e9edc9;
+}
+
+
+h1{
+    color: #283618;
+}
+
+h2{
+    color: #606c38;
+  
+}
+h3{
+    color: #606c38;
+}
+
+img{
+    width: 600px;
+    border-radius: 5px;
+}
+
+nav {
+    border: 2px solid black;
+    border-radius: 5;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+ul{
+    
+}
+
+section:first-of-type{
+    background-color: #606c38;
+}
