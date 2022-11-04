@@ -1,0 +1,67 @@
+/*Pozicioniranje elemenata:
+ position: statuc absolute fixed relative sticky initial inherit
+ static je uvijek prvi tj defaultni
+ */
+/*drugi div je i dalje upamtio prirodnu poziciju od šime, body je veći. to mjesto je sad rezervirano
+i nis nemre ostat tamo*/
+.relativno {
+  background-color: aqua;
+  position: relative;
+  top: 100px;
+  left: 200px;
+}
+
+/* absolute element je postavljeun u odnosu na svog prvvog pozicioniranog ne static roditelja*/
+
+/*posiiton fixed*/
+/*uvijek stoji gdje smo ga zalijepili*/
+.fiksni {
+  background-color: bisque;
+  position: fixed;
+  right: 0px;
+  bottom: 100px;
+}
+
+/*position sticky dvostruka narav- bude na prirodnom mjestu ali u skrolu se 
+ pokaze sticky*/
+
+.sticky {
+  background-color: brown;
+  position: sticky;
+  top: 50px;
+}
+/*kad je netko absolute njegove dimenzije su 0*0, predak se odrice, a relative se njegove 
+ nekadasnje dimenzije pamte*/
+
+/*fixed ne ostavlja prazninu, izbacuje se iz document flow*/
+
+/*Z index- bitno svojstvo, stack elementa
+ elementi kad su pozivionirani se mogu poklapati a s z indexom specificiramo redsolijd elemenata
+ */
+
+/*css overflow*/
+
+/*float malo zastarjelo
+ ako je inline element bacas na L ili D stranu
+ kad neko ima float ibacuje ga se iz toka elementa
+ */
+
+/*flexbox direction agnostic-
+ kad su manje kompponente je flexbox bolji, ali za veci layout je bolji grid*/
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+.flex-container > div {
+  width: 100%;
+}
+.flex-container > div:first-of-type {
+  width: 50%;
+}
+
+.inline-flex-container {
+  display: inline-flex;
+}
+
+/*flex direction- redosdlijed punjenja itema*/
