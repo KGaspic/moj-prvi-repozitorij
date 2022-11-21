@@ -1,0 +1,85 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  #wrapper{
+      display: grid;
+      height: 100vh;
+      grid-template-columns: 10% 20% 20%;
+      grid-template-rows: 10% 20% 20%;
+      grid-template-areas: 
+      "header header header"
+      "sidebar glv glv"
+      "sidebar vj1 vj2";
+      justify-content: space-between;
+      align-content: space-between;
+      place-content: space-between;
+
+  }
+  
+  
+  /*Justify items- poravnava grid iteme po horizontali , dok align items poravnava po vertikali
+  defaultno poravanje je stretch*/
+  
+  /*place items shorthand property*/
+  /*
+  #wrapper {
+    display: grid;
+    height: 100vh;
+    grid-template: "header header header" 20% "sidebar glv glv" 40% "sidebar vj1 vj2" 40% ;
+    row-gap: 10px;
+    column-gap: 10px;
+    padding: 10px;
+    justify-items: flex-end;
+    align-items: center;
+    place-items: center / flex-end;
+  }
+  */
+  header {
+    background-color: aquamarine;
+    grid-area: header;
+    
+  }
+  
+  section {
+    background-color: blueviolet;
+    grid-area: sidebar;
+    
+  }
+  
+  article:first-of-type {
+    background-color: brown;
+    grid-area: glv;
+    
+  }
+  
+  article:nth-of-type(2) {
+    background-color: aquamarine;
+    grid-area: vj1;
+ 
+  }
+  
+  article:last-of-type {
+    background-color: antiquewhite;
+    grid-area: vj2;
+   
+  }
+  
+  
+  /*justify-content- grid container koji nije ispunjen do kraja, po hor osi cijelu matricu pomicemo preko tog praznog prostora
+  *
+  
+  align-content - ista stvar po vertikalnoj osi
+  
+  place-content - align content + justify content
+  
+  grid-auto-flow default row, moze i column moze i dense. dense nam i nije bas potreban
+
+  sve ovo pise na css tricks-keti bilo bi dobro da to pogledas bit ce ti puno toga jasnijen
+  */
+  
+  /*  shorthand grid
+  
+  */

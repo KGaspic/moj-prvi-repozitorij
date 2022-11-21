@@ -1,0 +1,17 @@
+@use 'partials17/_base';
+@use 'partials17/_mixins';
+
+main{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url();
+}
+
+div{
+flex-basis: 25%;
+@include mixins.boxCommon($color:blue);
+
+}

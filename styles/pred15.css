@@ -1,0 +1,47 @@
+.box-za-sliku {
+  width: 400px;
+  height: 200px;
+  background-image: url("https://www.w3schools.com/css/paper.gif");
+}
+
+.no-repeat {
+  width: 400px;
+  height: 200px;
+  background-image: url("https://www.w3schools.com/css/paper.gif");
+  background-repeat: no-repeat;
+}
+
+.position {
+  width: 400px;
+  height: 200px;
+  background-image: url("https://www.w3schools.com/css/paper.gif");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+#objedinjavajuci {
+  height: 800px;
+  width: 600px;
+  background: #8a3737 url("img_tree.png") no-repeat right top;
+}
+
+
+
+#contain{ /*smanjuje se grb dok ne dode do rubova s neke strane i onda stane rasti, cijela
+    slika se vidi, problem je sto ostane pranzog prostora*/
+    width: 800px;
+    height: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: khaki;
+    background-image: url("https://ih1.redbubble.net/image.2482524838.2959/st,small,507x507-pad,600x600,f8f8f8.jpg");
+}
+
+#cover{ /*smanjuje se dok ne pogodi jednu dmenziju*/
+    width: 800px;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: khaki;
+    background-image: url("https://ih1.redbubble.net/image.2482524838.2959/st,small,507x507-pad,600x600,f8f8f8.jpg");
+}

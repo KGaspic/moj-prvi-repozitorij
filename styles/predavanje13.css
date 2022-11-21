@@ -1,0 +1,80 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/*#wrapper{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 20% 40% 40%;
+    grid-template-rows: 20% 40% 40%;
+    grid-template-areas: 
+    "header header header"
+    "sidebar glv glv"
+    "sidebar vj1 vj2";
+}
+*/
+
+/*Justify items- poravnava grid iteme po horizontali , dok align items poravnava po vertikali
+defaultno poravanje je stretch*/
+
+/*place items shorthand property*/
+
+#wrapper {
+  display: grid;
+  height: 100vh;
+  grid-template: "header header header" 20% "sidebar glv glv" 40% "sidebar vj1 vj2" 40% ;
+  row-gap: 10px;
+  column-gap: 10px;
+  padding: 10px;
+  justify-items: flex-end;
+  align-items: center;
+  place-items: center / flex-end;
+}
+
+header {
+  background-color: aquamarine;
+  grid-area: header;
+  width: 50%;
+  height: 50%;
+}
+
+section {
+  background-color: blueviolet;
+  grid-area: sidebar;
+  width: 50%;
+  height: 50%;
+}
+
+article:first-of-type {
+  background-color: brown;
+  grid-area: glv;
+  width: 50%;
+  height: 50%;
+}
+
+article:nth-of-type(2) {
+  background-color: aquamarine;
+  grid-area: vj1;
+  width: 50%;
+  height: 50%;
+}
+
+article:last-of-type {
+  background-color: antiquewhite;
+  grid-area: vj2;
+  width: 50%;
+  height: 50%;
+}
+
+
+/*justify-content- grid container koji nije ispunjen do kraja, po hor osi cijelu matricu pomicemo preko tog praznog prostora
+*
+
+align-content - ista stvar po vertikalnoj osi
+
+place-content - align content + justify content
+
+
+*/
